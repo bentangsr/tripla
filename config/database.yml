@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: <%= ENV['DATABASE_NAME'] %>
+
+test:
+  <<: *default
+  database: <%= ENV['DATABASE_NAME_TEST'] %>
+
+production:
+  <<: *default
+  database: tripla_test_production
+  username: tripla_test
+  password: <%= ENV["TRIPLA_TEST_DATABASE_PASSWORD"] %>
