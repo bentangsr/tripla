@@ -44,3 +44,4 @@ module UsersCache
     return JSON.load my_activities
   end
 end
+
