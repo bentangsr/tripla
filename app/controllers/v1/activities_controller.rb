@@ -49,14 +49,3 @@ class V1::ActivitiesController < ApplicationController
   end
 end
 
-# 1. Clock In operation, and return all clocked-in times, ordered by created time.
-# 2. Users can follow and unfollow other users.
-# 3. See the sleep records over the past week for their friends, ordered by the length of their sleep.
-
-# kerjaan buat besok
-# 1. buat service untuk create activity dengan kondisi sebagai berikut
-#   a. waktu di ambil dari clock_operation, jika tidak ada maka kembalikan error
-#   b. waktu dicreate jika user sudah mempunyai data lengkap
-#   c. activity tidak bisa di create lagi jika wake up dan sleep at tidak lengkap
-#   d. activity akan di update jika waktu sleep at tidak kosong
-# 2. unit testing
