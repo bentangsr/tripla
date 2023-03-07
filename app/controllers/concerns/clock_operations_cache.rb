@@ -10,3 +10,4 @@ module ClockOperationsCache
     return JSON.load clock_operations
   end
 end
+
