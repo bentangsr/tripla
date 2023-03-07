@@ -14,7 +14,6 @@ class V1::ClockOperationsController < ApplicationController
     end
   end
 
-
   private
 
   def clock_operation_params
