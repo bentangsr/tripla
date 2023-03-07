@@ -4,3 +4,4 @@ class ApplicationRecord < ActiveRecord::Base
 
   after_commit :delete_current_cache
 end
+
