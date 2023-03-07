@@ -96,3 +96,4 @@ class V1::FriendshipController < ApplicationController
     end
   end
 end
+
