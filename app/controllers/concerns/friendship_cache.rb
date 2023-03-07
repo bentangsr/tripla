@@ -40,3 +40,4 @@ module FriendshipCache
     return JSON.load user_following
   end
 end
+
